@@ -24,6 +24,16 @@ Machine learning can play a big role in churning out all these data from diverse
 
 ### Datasets and Inputs
 
-I will be using the data from an old Kaggle competition **Bag of Words Meets Bags of Popcorn** (https://www.kaggle.com/c/word2vec-nlp-tutorial). This dataset contains 25,000 labeled training reviews, 50,000 unlabeled training reviews, and 25,000 testing reviews.
+I will be using the data from an old Kaggle competition **Bag of Words Meets Bags of Popcorn** (https://www.kaggle.com/c/word2vec-nlp-tutorial). This dataset contains 25,000 labeled training reviews, 50,000 unlabeled training reviews, and 25,000 testing reviews. 
+
+The dataset has below three columns.
+```
+['id' 'sentiment' 'review']
+```
+
+- *id*: unique identifier; we don't need this field. 
+- *sentiment*: has only two values 1 and 0. 1 for positive and 0 for negative.
+- *review*: Detailed review. This is the input value for a movie. 
+
 
 
