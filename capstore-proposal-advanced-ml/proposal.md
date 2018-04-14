@@ -21,3 +21,7 @@ countless tweets, facebook posts/comments and IMDB reviews.
 Machine learning can play a big role in churning out all these data from diverse sources and just providing an overall positive or negative feedback of the movies i.e. in short weather it's thumbs up or down. Machine learning can also help to classify a movie in more than two categories like average, good, very good, bad etc. As a user it will be really helpful to just know the overall feedback of the movie rather than going through the countless reviews. 
 
 **For this capstore project, I will be using IMDB dataset and perform sentimet analysis.**
+
+### Datasets and Inputs
+
+Kaggle provides IMDB dataset for sentiment analysis, https://www.kaggle.com/c/word2vec-nlp-tutorial/data. 
