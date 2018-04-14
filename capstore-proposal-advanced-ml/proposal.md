@@ -24,4 +24,6 @@ Machine learning can play a big role in churning out all these data from diverse
 
 ### Datasets and Inputs
 
-Kaggle provides IMDB dataset for sentiment analysis, https://www.kaggle.com/c/word2vec-nlp-tutorial/data. 
+I will be using the data from an old Kaggle competition **Bag of Words Meets Bags of Popcorn** (https://www.kaggle.com/c/word2vec-nlp-tutorial). This dataset contains 25,000 labeled training reviews, 50,000 unlabeled training reviews, and 25,000 testing reviews.
+
+
