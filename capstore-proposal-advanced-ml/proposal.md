@@ -15,7 +15,7 @@ I had used Stanford NLP library but during the contest, I could only scratch the
 
 ### Problem Statement
 
-**Perform movie review using machine learning techniquies.** On internet a lot of content is available which gives review or feedback of movies. Now, for a person to decide whether to go for a movie or not is not so trivial if he/she has to go through 
+**Perform movie review using machine learning techniques.** On internet a lot of content is available which gives review or feedback of movies. Now, for a person to decide whether to go for a movie or not is not so trivial if he/she has to go through 
 countless tweets, facebook posts/comments and IMDB reviews. 
 
 Machine learning can play a big role in churning out all these data from diverse sources and just providing an overall positive or negative feedback of the movies i.e. in short weather it's thumbs up or down. Machine learning can also help to classify a movie in more than two categories like average, good, very good, bad etc. As a user it will be really helpful to just know the overall feedback of the movie rather than going through the countless reviews. 
