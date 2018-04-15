@@ -55,7 +55,7 @@ I plan to compare the performance of RNN (or LSTM: Long-Short Team Memory) with 
 
 ### Evaluation Metrics
 
-I plan to use Mean Squared Error as the technique to evaluate the model. 
+I plan to use Mean Squared Error as the technique to evaluate the model. Learning is achieved by iteratively updating each of the weights to minimize loss function, which penalizes the distance between the output and the target.
 
 
 ### Project Design
