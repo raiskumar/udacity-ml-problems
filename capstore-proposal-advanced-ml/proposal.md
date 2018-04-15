@@ -55,6 +55,8 @@ I plan to compare the performance of RNN (or LSTM: Long-Short Team Memory) with 
 
 ### Evaluation Metrics
 
+I plan to use Mean Squared Error as the technique to evaluate the model. 
+
 
 ### Project Design
 
@@ -85,14 +87,12 @@ As discussed above, I plan to use IMDB dataset from Kaggle and in particular the
 - Numpy
 - Matplotlib
 - Scikit-learn
+- Nltk
 
 
 ### References
+
 - A Critical Review of Recurrent Neural Networks for Sequence Learning: https://arxiv.org/pdf/1506.00019.pdf
 - Understanding LSTM Networks: http://colah.github.io/posts/2015-08-Understanding-LSTMs/
 - The Unreasonable Effectiveness of Recurrent Neural Networks: http://karpathy.github.io/2015/05/21/rnn-effectiveness/
 - Kaggle Problem Reference: https://www.kaggle.com/c/word2vec-nlp-tutorial#description
-
-
-
-
