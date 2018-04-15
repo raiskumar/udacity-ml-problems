@@ -34,15 +34,13 @@ The dataset has below three columns/fields.
 - **sentiment**: Contains binary values (1 and 0). 1 for positive and 0 for negative. This is the label of the model. 
 - **review**: Detailed review for movies. This is the text or feature on which machine learning models will get trainned. 
 
-**Unlabeled training** data and **testing data** doesn't have _sentiment_ field. So for this project, I will rely only on **labelled training** data for training model as well as testing the model. 
+**Unlabeled training** data and **testing data** doesn't have _sentiment_ field. So for this project, I will rely only on **labelled training** data for training model as well as testing the model. The file (*labeledTrainData.tsv*) is tab-delimited and has a header row followed by 25,000 rows containing an id, sentiment, and text for each review.  
 
-#### Input dataset: The labeled training set 
-The file (*labeledTrainData.tsv*) is tab-delimited and has a header row followed by 25,000 rows containing an id, sentiment, and text for each review.  
+I am planning to use 10% of data testing and will report accuracy of the model on the performance of this data.
 
-Planning to use 10% of data of input dataset for testing and will report accuracy of the model on the performance of this data.
-
-**Dataset size for Training the model:** 90% of 25,000 = 22,500
-**Dataset size for Testing the model:** 10% of 25,000 = 2,500
+#### Input dataset: labeledTrainData.tsv
+- **Dataset size for Training the model:** 90% of 25,000 = 22,500
+- **Dataset size for Testing the model:** 10% of 25,000 = 2,500
 
 
 
