@@ -45,4 +45,4 @@ I am planning to use 10% of data testing and will report accuracy of the model o
 
 ### Solution Statement
 
-Planning to use Deep Learning to solve this problem. Number of words in the reviews field is not fixed and also the meaning doesn't depend directly on words but also on the context. So the same word can have different meaning depending on the surrounding words. Recurrent Neural Network is a type of Deep learning which deals with time series data of variable leangth. 
+Planning to use Deep Learning to solve this problem. Number of words in the reviews field is not fixed and also the meaning doesn't depend directly on words but also on the context. So the same word can have different meaning depending on the surrounding words. Recurrent Neural Network is a type of Deep learning techqniue which deals with time series data of variable leangth and have had good success off late in area of natural languages. As part of this project, I want to learn about this field and apply to this problem. But, at the same time I would like to apply normal machine learning techniques to understan how they perform in this problem. 
