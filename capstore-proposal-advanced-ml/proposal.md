@@ -63,23 +63,35 @@ As discussed above, I plan to use IMDB dataset from Kaggle and in particular the
 - **Dataset Exploration:** Load the data in python and explore it. Make sure that the dataset has almost equal nuber of positive and negative sentiments. Also, ensure that the data is randomized so that training is proper. 
 
 - **Preprocessing:** Before applying the data on modelling, I will ensure that it's preprocessed and in the right form. I am planning to do below activity to ensure that:
- - Remove special characters from the text. These special characters are noise and they don't convey any meaningful input for sentiment analysis. These special characters could be punctuations, html elements etc. 
- - Remove stop words 
+  - Remove special characters from the text. These special characters are noise and they don't convey any meaningful input for sentiment analysis. These special characters could be punctuations, html elements etc. 
+  - Remove stop words from the text. Stop words also don't add any value in sentiment analysis and they increase the text size which will further slow down the training process.
  
-- **Create Vocab:** This will help to know how manu unique words are there in the whole dataset. 
+- **Create Vocab:** This will help to know how many unique words are there in the whole dataset and based on that take appropriate decision to optimize the model performance. 
 
 - **Word Embedding:** ML techniques work on vector of integers or floats so we need to transform the text or words into their number representation. 
 
 - **Training and Testing data set:** As discussed above separate out 90% of data for modelling purpose and rest 10% for testing purpose. 
 
-- **Modelling:** Model the problem appropriately using traditional technique like Naive Bayes as well as RNN/LSTM. 
+- **Modelling:** Model the problem appropriately using traditional technique like Naive Bayes as well as RNN/LSTM. LSTM has many parameters can influcen the performance. Some of them are: number of LSTM cells, learning rate, dropout rate, number of hiden layers etc. 
 
-- **Traininng:** Train the model and tweak parameters to get best results. 
+- **Traininng:** Train the model and tweak parameters to improve the performance of the model. Keep doing it until the result gets saturated.
 
 - **Testing:** Test the model and record the accuracy percentage. 
 
+#### Environment/Tools/Libraries
+- Python 3.+
+- Tensorflow
+- Pandas
+- Numpy
+- Matplotlib
+- Scikit-learn
+
 
 ### References
+- A Critical Review of Recurrent Neural Networks for Sequence Learning: https://arxiv.org/pdf/1506.00019.pdf
+- Understanding LSTM Networks: http://colah.github.io/posts/2015-08-Understanding-LSTMs/
+- The Unreasonable Effectiveness of Recurrent Neural Networks: http://karpathy.github.io/2015/05/21/rnn-effectiveness/
+- Kaggle Problem Reference: https://www.kaggle.com/c/word2vec-nlp-tutorial#description
 
 
 
