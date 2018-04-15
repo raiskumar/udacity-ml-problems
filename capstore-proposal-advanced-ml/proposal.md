@@ -36,13 +36,15 @@ The dataset has below three columns/fields.
 
 **Unlabeled training** data and **testing data** doesn't have _sentiment_ field. So for this project, I will rely only on **labelled training** data for training model as well as testing the model. 
 
-### Input dataset
-**labeledTrainData.tsv** - The labeled training set. The file is tab-delimited and has a header row followed by 25,000 rows containing an id, sentiment, and text for each review.  
+#### Input dataset: The labeled training set 
+The file (*labeledTrainData.tsv*) is tab-delimited and has a header row followed by 25,000 rows containing an id, sentiment, and text for each review.  
 
 Planning to use 10% of data of input dataset for testing and will report accuracy of the model on the performance of this data.
 
-**Dataset size for modelling:** 90% of 25,000 = 22,500
-**Dataset size for testing the model:** 10% of 25,000 = 2,500
+**Dataset size for Training the model:** 90% of 25,000 = 22,500
+**Dataset size for Testing the model:** 10% of 25,000 = 2,500
+
+
 
 
 
