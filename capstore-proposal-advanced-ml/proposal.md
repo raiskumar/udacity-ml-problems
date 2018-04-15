@@ -53,3 +53,34 @@ I plan to use Deep Learning techinques as the final solution. Number of words in
 I plan to compare the performance of RNN (or LSTM: Long-Short Team Memory) with that of traditional approaches like Naive Bayes. I will compare the accuracy or mean-squared error of each technique to analyse which one is more effective and try to find out the reason for the same. Also, this is a Kaggle problem and the leader board shows good success rate. So, planing to achieve accuracy of atleast 90% on the test data. 
 
 
+### Evaluation Metrics
+
+
+### Project Design
+
+As discussed above, I plan to use IMDB dataset from Kaggle and in particular the labeled data set. Below are major compoenet of the modeling / training. 
+
+- **Dataset Exploration:** Load the data in python and explore it. Make sure that the dataset has almost equal nuber of positive and negative sentiments. Also, ensure that the data is randomized so that training is proper. 
+
+- **Preprocessing:** Before applying the data on modelling, I will ensure that it's preprocessed and in the right form. I am planning to do below activity to ensure that:
+ - Remove special characters from the text. These special characters are noise and they don't convey any meaningful input for sentiment analysis. These special characters could be punctuations, html elements etc. 
+ - Remove stop words 
+ 
+- **Create Vocab:** This will help to know how manu unique words are there in the whole dataset. 
+
+- **Word Embedding:** ML techniques work on vector of integers or floats so we need to transform the text or words into their number representation. 
+
+- **Training and Testing data set:** As discussed above separate out 90% of data for modelling purpose and rest 10% for testing purpose. 
+
+- **Modelling:** Model the problem appropriately using traditional technique like Naive Bayes as well as RNN/LSTM. 
+
+- **Traininng:** Train the model and tweak parameters to get best results. 
+
+- **Testing:** Test the model and record the accuracy percentage. 
+
+
+### References
+
+
+
+
