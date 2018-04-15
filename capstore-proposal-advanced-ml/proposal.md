@@ -30,9 +30,9 @@ The dataset has below three columns.
 ['id' 'sentiment' 'review']
 ```
 
-- *id*: unique identifier; we don't need this field. 
-- *sentiment*: has only two values 1 and 0. 1 for positive and 0 for negative.
-- *review*: Detailed review. This is the input value for a movie. 
+- **id**: unique identifier; we don't need this field. 
+- **sentiment**: has binary values (1 and 0). 1 for positive and 0 for negative. This is the label of the model. 
+- **review**: Detailed review. This is the text or feature on which machine learning models will get trainned. 
 
 
 
