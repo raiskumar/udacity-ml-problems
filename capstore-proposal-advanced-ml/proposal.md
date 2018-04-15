@@ -70,7 +70,7 @@ As discussed above, I plan to use IMDB dataset from Kaggle and in particular the
  
 - **Create Vocab:** This will help to know how many unique words are there in the whole dataset and based on that take appropriate decision to optimize the model performance. 
 
-- **Word Embedding:** ML techniques work on vector of integers or floats so we need to transform the text or words into their number representation. 
+- **Word Embedding:** ML techniques work on vector of integers or floats so we need to transform the text or words into their number representation. Also explore if pre-trained word bectors (like word2vec, glove etc) can be used.
 
 - **Training and Testing data set:** As discussed above separate out 90% of data for modelling purpose and rest 10% for testing purpose. 
 
