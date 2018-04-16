@@ -57,25 +57,19 @@ I plan to use Mean Squared Error as the technique to evaluate the model. Learnin
 
 ### Project Design
 
-As discussed above, I plan to use IMDB dataset from Kaggle and in particular the labeled data set. Below are major components of the modeling / training. 
-
-- **Dataset Exploration:** Load the data in python and explore it. Make sure that the dataset has almost equal number of positive and negative sentiments. Also, ensure that the data is randomized. 
+As discussed above, I plan to use IMDB dataset from Kaggle and in particular the labeled data set. Below are major components or stages of the modeling / training. 
 
 - **Preprocessing:** Before applying the data on modelling, I will ensure that it's preprocessed and in the right form. I am planning to do below activity to ensure that:
-  - Remove special characters from the text. These special characters are noise and they don't convey any meaningful input for sentiment analysis. These special characters could be punctuations, html elements etc. 
-  - Remove stop words from the text. Stop words also don't add any value in sentiment analysis and they increase the text size which will further slow down the training process.
+  - Load the data in python and explore it to ensure that data is randomized with similar number of positive and negative sentiments. 
+  - Remove special characters like punctuations and stop words from the text. These characters/words are noise and they don't convey any meaningful input for sentiment analysis. They also increase the text size which will further slow down the training process.
  
-- **Create Vocab:** This will help to know how many unique words are there in the whole dataset and based on that take appropriate decision to optimize the model performance. 
+- **Create Vocab:** This will help to know how many unique words are there in the whole dataset and based on that plan to take appropriate decision to optimize the model performance. 
 
-- **Word Embedding:** ML techniques work on vector of integers or floats so we need to transform the text or words into their number representation. Also explore if pre-trained word bectors (like word2vec, glove etc) can be used.
+- **Word Embedding:** Machine learning mostly work on vector (of integers or floats), so we need to transform the text into their number representation. I also plan to explore if pre-trained word bectors (like word2vec, GloVe etc) can be used. 
 
-- **Training and Testing data set:** As discussed above separate out 90% of data for modelling purpose and rest 10% for testing purpose. 
+- **Modelling/Training:** Model the problem appropriately using traditional technique like Naive Bayes as well as Deep learning models RNN/LSTM. Deep learning techiques have many parameters(number of LSTM cells, learning rate, dropout rate, number of hiden layers etc.) which can be tweked to test  the perforance. 
 
-- **Modelling:** Model the problem appropriately using traditional technique like Naive Bayes as well as RNN/LSTM. LSTM has many parameters can influcen the performance. Some of them are: number of LSTM cells, learning rate, dropout rate, number of hiden layers etc. 
-
-- **Traininng:** Train the model and tweak parameters to improve the performance of the model. Keep doing it until the result gets saturated.
-
-- **Testing:** Test the model and record the accuracy percentage. 
+- **Testing:** Test the model and record the accuracy percentage on test dataset. 
 
 #### Environment/Tools/Libraries
 - Python 3.+
