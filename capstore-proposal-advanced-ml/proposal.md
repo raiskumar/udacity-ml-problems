@@ -23,7 +23,7 @@ Machine learning can play a big role in churning out data from different social 
 
 ### Datasets and Inputs
 
-I will be using the data from an old Kaggle competition **Bag of Words Meets Bags of Popcorn** (https://www.kaggle.com/c/word2vec-nlp-tutorial). This dataset contains 25,000 labeled training reviews, 50,000 unlabeled training reviews, and 25,000 testing reviews. **Unlabeled training** data and **testing data** doesn't have a _sentiment_ field. So for this project, I will rely only on ** labeled training** data for training as well as testing. 
+I will be using the data from an old Kaggle competition **Bag of Words Meets Bags of Popcorn** (https://www.kaggle.com/c/word2vec-nlp-tutorial). This dataset contains 25,000 labeled training reviews, 50,000 unlabeled training reviews, and 25,000 testing reviews. **Unlabeled training** data and **testing data** doesn't have a _sentiment_ field. So for this project, I will rely only on **labeled training** data for training as well as testing. 
 
  The file (*labeledTrainData.tsv*) is tab-delimited and has a header row followed by 25,000 rows and contains three columns/fields:
 ```
@@ -43,7 +43,7 @@ I am planning to use 20% of data for testing and will report the accuracy of the
 
 ### Solution Statement
 
-I plan to use Deep Learning techniques as the final solution. *Number of words in the reviews are not fixed and also the meaning doesn't depend directly on words but also on the context*. So the same word can have different meaning depending on the surrounding words. Recurrent neural networks are feedforward neural networks augmented by the inclusion of edges that span adjacent time steps, introducing a notion of time to the model. It deals with time series data of variable length and has had good success off late in the area of natural languages. As part of this project, I plan to learn Recurrent Neural Network (RNN) and apply the learnings to this problem. But, at the same time, I would also like to explore how traditional machine learning techniques (non-deep learning) perform on this problem. 
+I plan to use Deep Learning techniques as the final solution. *Number of words in the reviews are not fixed and also the meaning doesn't depend directly on words but also on the context*. So the same word can have different meaning depending on the surrounding words. **Recurrent neural networks are feedforward neural networks augmented by the inclusion of edges that span adjacent time steps, introducing a notion of time to the model. It deals with time series data of variable length and has had good success off late in the area of natural languages.** As part of this project, I plan to learn Recurrent Neural Network (RNN) and apply the learnings to this problem. But, at the same time, I would also like to explore how traditional machine learning techniques (non-deep learning) perform on this problem. 
 
 
 ### Benchmark Model
@@ -60,15 +60,15 @@ I plan to use Mean Squared Error as the technique to evaluate the model. Learnin
 
 As discussed above, I plan to use IMDB dataset from Kaggle and in particular the labeled data set. Below are major components or stages of the modeling/training. 
 
-- **Preprocessing:** Before applying the data to modeling, I will ensure that it's preprocessed and in the right form. I am planning to do the activity to ensure that:
-  - Load the data in python and explore it to ensure that data is randomized with the similar number of positive and negative sentiments. 
-  - Remove special characters like punctuations and stop words from the text. These characters/words are noise and they don't convey any meaningful input for sentiment analysis. They also increase the text size which will further slow down the training process.
+- **Preprocessing:** Before applying the data to modeling, I will ensure that it's preprocessed and in the right form. 
+  - Load the data in python and explore it to ensure that, data is randomized with the similar number of positive and negative sentiments. 
+  - Remove special characters like punctuations and stop words from the text. These characters/words are noise and they don't convey any meaningful input for sentiment analysis. They also increase the text size which will further slow down the modelling process.
  
 - **Create Vocab:** This will help to know how many unique words are there in the whole dataset and based on that plan to take appropriate decision to optimize the model performance. 
 
 - **Word Embedding:** Machine learning mostly work on the vector (of integers or floats), so I need to transform the text into their number representation. One of the technique is to use **one-hot encoding** on the vocab. However, this encoding is inefficient, requiring as many bits as the vocabulary. Further, it offers no direct way to capture similarity aspect between words in the encoding itself (like it fails to understand that love and adore are similar words). I also plan to explore if pre-trained word vectors (like Word2vec, GloVe etc) can be used to quicken the modelling.  
 
-- **Modelling/Training:** I plan to model the problem using the traditional technique like **Naive Bayes** as well as Deep learning techniques **RNN/LSTM**. RNN are feedforward neural networks augmented by the inclusion of edges that span adjacent time steps, introducing a notion of time to the model. Below is a high level diagram on how it performs sentimet analysis on text.
+- **Modelling/Training:** I plan to model the problem using the traditional technique like **Naive Bayes** as well as Deep learning techniques **RNN/LSTM**. Below is a high level diagram on how it performs sentimet analysis on text.
 
 ![https://d3ansictanv2wj](https://d3ansictanv2wj.cloudfront.net/SentimentAnalysis16-38b6f3cbb7bae622fe0ba114db188666.png)
 
