@@ -8,9 +8,10 @@ April 12, 2018
 
 ### Domain Background
 
-A couple of years back, I participated in my company Hackathon where I worked on the **sentiment** and **intent** analysis for a chatbot. I had used Stanford NLP library but, I could barely scratch the surface of NLP. I have also explored **sentiment analysis** on the tweets. In either case, I couldn't understand the field much, but it kept me intrigued and motivated to learn about it. And that's one of the reasons for me to do this course.
+A couple of years back, I participated in my company Hackathon where I worked on the **sentiment** and **intent** analysis for a chatbot. I had used Stanford Natural Language Processing(NLP) library but, I could barely scratch the surface of NLP. I have also explored **sentiment analysis** on the tweets. In either case, I couldn't understand the field much, but it kept me intrigued and motivated to learn about it. And that's one of the reasons for me to do this course.
 
-**Sentiment Analysis** is one of the interesting and exciting problems of Natural Language Processing. I plan to use this opportunity to explore this field and do something tangible. One common use of sentiment analysis is to figure out if a text expresses negative or positive feelings.
+**Sentiment Analysis** is one of the interesting and exciting problems of Natural Language Processing. I plan to use this opportunity to explore this field and do something tangible. One common use of sentiment analysis is to figure out if a text, sentence or paragraph expresses negative or positive emotional feeling. 
+
 
 ### Problem Statement
 
@@ -65,7 +66,7 @@ As discussed above, I plan to use IMDB dataset from Kaggle and in particular the
  
 - **Create Vocab:** This will help to know how many unique words are there in the whole dataset and based on that plan to take appropriate decision to optimize the model performance. 
 
-- **Word Embedding:** Machine learning mostly work on the vector (of integers or floats), so we need to transform the text into their number representation. I also plan to explore if pre-trained word vectors (like word2vec, GloVe etc) can be used. 
+- **Word Embedding:** Machine learning mostly work on the vector (of integers or floats), so we need to transform the text into their number representation. One of the technique is to use one-hot encoding on the vocab. However, this encoding is ine cient, requiring as many bits as the vocabulary. Further, it offers no direct way to capture similarity aspect between words in the encoding itself (like it fails to understand that love and adore are similar words). I also plan to explore if pre-trained word vectors (like Word2vec, GloVe etc) can be used to quicken the modelling.  
 
 - **Modelling/Training:** Model the problem appropriately using the traditional technique like Naive Bayes as well as Deep learning models RNN/LSTM. Deep learning techniques have many parameters(number of LSTM cells, learning rate, dropout rate, number of hidden layers etc.) which can be tweaked to test the performance. 
 
