@@ -43,7 +43,7 @@ I am planning to use 20% of data for testing and will report the accuracy of the
 
 ### Solution Statement
 
-I plan to use Deep Learning techniques as the final solution. *Number of words in the reviews are not fixed and also the meaning doesn't depend directly on words but also on the context*. So the same word can have different meaning depending on the surrounding words. Recurrent neural networks are feedforward neural networks augmented by the inclusion of edges that span adjacent time steps, introducing a notion of time to the model. It deals with time series data of variable length and has had good success off late in the area of natural languages. As part of this project, I plan to learn RNN and apply the learnings to this problem. But, at the same time, I would also like to explore how traditional machine learning techniques (non-deep learning) perform on this problem. 
+I plan to use Deep Learning techniques as the final solution. *Number of words in the reviews are not fixed and also the meaning doesn't depend directly on words but also on the context*. So the same word can have different meaning depending on the surrounding words. Recurrent neural networks are feedforward neural networks augmented by the inclusion of edges that span adjacent time steps, introducing a notion of time to the model. It deals with time series data of variable length and has had good success off late in the area of natural languages. As part of this project, I plan to learn Recurrent Neural Network (RNN) and apply the learnings to this problem. But, at the same time, I would also like to explore how traditional machine learning techniques (non-deep learning) perform on this problem. 
 
 
 ### Benchmark Model
@@ -68,7 +68,7 @@ As discussed above, I plan to use IMDB dataset from Kaggle and in particular the
 
 - **Word Embedding:** Machine learning mostly work on the vector (of integers or floats), so we need to transform the text into their number representation. One of the technique is to use one-hot encoding on the vocab. However, this encoding is ine cient, requiring as many bits as the vocabulary. Further, it offers no direct way to capture similarity aspect between words in the encoding itself (like it fails to understand that love and adore are similar words). I also plan to explore if pre-trained word vectors (like Word2vec, GloVe etc) can be used to quicken the modelling.  
 
-- **Modelling/Training:** I plan to model the problem using the traditional technique like **Naive Bayes** as well as Deep learning techniques RNN/LSTM. RNN are feedforward neural networks augmented by the inclusion of edges that span adjacent time steps, introducing a notion of time to the model. Below is a high level diagram on how it performs sentimet analysis on text.
+- **Modelling/Training:** I plan to model the problem using the traditional technique like **Naive Bayes** as well as Deep learning techniques **RNN/LSTM**. RNN are feedforward neural networks augmented by the inclusion of edges that span adjacent time steps, introducing a notion of time to the model. Below is a high level diagram on how it performs sentimet analysis on text.
 
 ![https://d3ansictanv2wj](https://d3ansictanv2wj.cloudfront.net/SentimentAnalysis16-38b6f3cbb7bae622fe0ba114db188666.png)
 
