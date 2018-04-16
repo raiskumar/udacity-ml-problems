@@ -34,11 +34,11 @@ I will be using the data from an old Kaggle competition **Bag of Words Meets Bag
 - **sentiment**: Contains binary values (1 and 0). 1 for positive and 0 for negative. This is the label of the model. 
 - **review**: a Detailed review of movies. This is the text or feature on which machine learning models will get trained. 
 
-I am planning to use 10% of data for testing and will report the accuracy of the model on this randomly selected dataset. 
+I am planning to use 20% of data for testing and will report the accuracy of the model on this randomly selected dataset. 
 
 #### Input dataset: labeledTrainData.tsv
-- **Dataset size for Training the model:** 90% of 25,000 = 22,500
-- **Dataset size for Testing the model:** 10% of 25,000 = 2,500
+- **Dataset size for Training the model:** 80% of 25,000 = 20,000
+- **Dataset size for Testing the model:**  20% of 25,000 = 5,000
 
 
 ### Solution Statement
@@ -48,7 +48,7 @@ I plan to use Deep Learning techniques as the final solution. *Number of words i
 
 ### Benchmark Model
 
-I plan to compare the performance of RNN (or LSTM: Long Short-Term Memory) with that of traditional approaches like Naive Bayes. I will compare the accuracy or mean-squared error of each technique to analyze which one is more effective and try to find out the reason for the same. Also, this is a Kaggle problem and the leaderboard shows good success rate. So, planning to achieve the accuracy of at least 90% on the test data for the final approach. 
+I plan to compare the performance of RNN (or LSTM: Long Short-Term Memory) with that of traditional approaches like Naive Bayes. I will compare the accuracy or mean-squared error of each technique to analyze which one is more effective and try to find out the reason for the same. Also, this is a Kaggle problem and the leaderboard shows good success rate. So, planning to achieve the accuracy of at least **90%** on the test data for the final approach. 
 
 
 ### Evaluation Metrics
@@ -68,7 +68,7 @@ As discussed above, I plan to use IMDB dataset from Kaggle and in particular the
 
 - **Word Embedding:** Machine learning mostly work on the vector (of integers or floats), so we need to transform the text into their number representation. One of the technique is to use one-hot encoding on the vocab. However, this encoding is ine cient, requiring as many bits as the vocabulary. Further, it offers no direct way to capture similarity aspect between words in the encoding itself (like it fails to understand that love and adore are similar words). I also plan to explore if pre-trained word vectors (like Word2vec, GloVe etc) can be used to quicken the modelling.  
 
-- **Modelling/Training:** Model the problem appropriately using the traditional technique like Naive Bayes as well as Deep learning models RNN/LSTM. Recurrent neural networks are feedforward neural networks augmented by the inclusion of edges that span adjacent time steps, introducing a notion of time to the model. Below is a high level diagram of RNN model. 
+- **Modelling/Training:** I plan to model the problem using the traditional technique like **Naive Bayes** as well as Deep learning techniques RNN/LSTM. RNN are feedforward neural networks augmented by the inclusion of edges that span adjacent time steps, introducing a notion of time to the model. Below is a high level diagram on how it performs sentimet analysis on text.
 
 ![https://d3ansictanv2wj](https://d3ansictanv2wj.cloudfront.net/SentimentAnalysis16-38b6f3cbb7bae622fe0ba114db188666.png)
 
@@ -90,3 +90,4 @@ As discussed above, I plan to use IMDB dataset from Kaggle and in particular the
 - Understanding LSTM Networks: http://colah.github.io/posts/2015-08-Understanding-LSTMs/
 - The Unreasonable Effectiveness of Recurrent Neural Networks: http://karpathy.github.io/2015/05/21/rnn-effectiveness/
 - Kaggle Problem Reference: https://www.kaggle.com/c/word2vec-nlp-tutorial#description
+- Perform sentiment analysis with LSTMs, using TensorFlow https://www.oreilly.com/learning/perform-sentiment-analysis-with-lstms-using-tensorflow
