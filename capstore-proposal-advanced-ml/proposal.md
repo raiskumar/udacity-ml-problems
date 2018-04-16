@@ -72,8 +72,8 @@ As discussed above, I plan to use IMDB dataset from Kaggle and in particular the
 - **Testing:** Test the model and record the accuracy percentage on test dataset. 
 
 #### Environment/Tools/Libraries
-- Python 3.+
-- Tensorflow
+- Python 3.6
+- Tensorflow 1.7
 - Pandas
 - Numpy
 - Matplotlib
