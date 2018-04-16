@@ -47,7 +47,7 @@ I plan to use Deep Learning techniques as the final solution. *Number of words i
 
 ### Benchmark Model
 
-I plan to compare the performance of RNN (or LSTM: Long-Short Team Memory) with that of traditional approaches like Naive Bayes. I will compare the accuracy or mean-squared error of each technique to analyze which one is more effective and try to find out the reason for the same. Also, this is a Kaggle problem and the leaderboard shows good success rate. So, planning to achieve the accuracy of at least 90% on the test data for the final approach. 
+I plan to compare the performance of RNN (or LSTM: Long Short-Term Memory) with that of traditional approaches like Naive Bayes. I will compare the accuracy or mean-squared error of each technique to analyze which one is more effective and try to find out the reason for the same. Also, this is a Kaggle problem and the leaderboard shows good success rate. So, planning to achieve the accuracy of at least 90% on the test data for the final approach. 
 
 
 ### Evaluation Metrics
