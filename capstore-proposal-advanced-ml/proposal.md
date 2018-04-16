@@ -68,9 +68,9 @@ As discussed above, I plan to use IMDB dataset from Kaggle and in particular the
 
 - **Word Embedding:** Machine learning mostly work on the vector (of integers or floats), so we need to transform the text into their number representation. One of the technique is to use one-hot encoding on the vocab. However, this encoding is ine cient, requiring as many bits as the vocabulary. Further, it offers no direct way to capture similarity aspect between words in the encoding itself (like it fails to understand that love and adore are similar words). I also plan to explore if pre-trained word vectors (like Word2vec, GloVe etc) can be used to quicken the modelling.  
 
-- **Modelling/Training:** Model the problem appropriately using the traditional technique like Naive Bayes as well as Deep learning models RNN/LSTM. Deep learning techniques have many parameters(number of LSTM cells, learning rate, dropout rate, number of hidden layers etc.) which can be tweaked to test the performance. 
+- **Modelling/Training:** Model the problem appropriately using the traditional technique like Naive Bayes as well as Deep learning models RNN/LSTM. Recurrent neural networks are feedforward neural networks augmented by the inclusion of edges that span adjacent time steps, introducing a notion of time to the model. Below is a high level diagram of RNN model. 
 
-![https://d3ansictanv2wj.cloudfront.net/SentimentAnalysis16-38b6f3cbb7bae622fe0ba114db188666.png](https://d3ansictanv2wj.cloudfront.net/SentimentAnalysis16-38b6f3cbb7bae622fe0ba114db188666.png)
+![https://d3ansictanv2wj](https://d3ansictanv2wj.cloudfront.net/SentimentAnalysis16-38b6f3cbb7bae622fe0ba114db188666.png)
 
 - **Testing:** Test the model and record the accuracy percentage on the test dataset. 
 
