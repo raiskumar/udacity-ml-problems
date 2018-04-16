@@ -37,8 +37,8 @@ I will be using the data from an old Kaggle competition **Bag of Words Meets Bag
 I am planning to use 20% of data for testing and will report the accuracy of the model on this randomly selected dataset. 
 
 #### Input dataset: labeledTrainData.tsv
-- **Dataset size for Training the model:** 80% of 25,000 = 20,000
-- **Dataset size for Testing the model:**  20% of 25,000 = 5,000
+- *Dataset size for Training the model:* 20,000 (80% of 25,000)
+- *Dataset size for Testing the model:*  5,000
 
 
 ### Solution Statement
