@@ -70,6 +70,9 @@ As discussed above, I plan to use IMDB dataset from Kaggle and in particular the
 
 - **Modelling/Training:** Model the problem appropriately using the traditional technique like Naive Bayes as well as Deep learning models RNN/LSTM. Deep learning techniques have many parameters(number of LSTM cells, learning rate, dropout rate, number of hidden layers etc.) which can be tweaked to test the performance. 
 
+![RNN Model](https://d3ansictanv2wj.cloudfront.net/SentimentAnalysis16-38b6f3cbb7bae622fe0ba114db188666.png)
+Ref: https://d3ansictanv2wj.cloudfront.net/SentimentAnalysis16-38b6f3cbb7bae622fe0ba114db188666.png
+
 - **Testing:** Test the model and record the accuracy percentage on the test dataset. 
 
 #### Environment/Tools/Libraries
