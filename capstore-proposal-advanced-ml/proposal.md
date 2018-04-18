@@ -12,6 +12,8 @@ A couple of years back, I participated in my company Hackathon where I worked on
 
 **Sentiment Analysis** is one of the interesting and exciting problems of Natural Language Processing. I plan to use this opportunity to explore this field and do something tangible. One common use of sentiment analysis is to figure out if a text, sentence or paragraph expresses negative or positive emotional feeling. 
 
+Sentiment Analysis technique can be used to understand the public perception of a brand or product based on online content and then decide appropriate business or marketting strategies. Political parties in Democracies are deciding their campaign strategies based on people's openion on social platforms (https://ieeexplore.ieee.org/document/7823280/).
+
 
 ### Problem Statement
 
@@ -39,6 +41,11 @@ I am planning to use 20% of data for testing and will report the accuracy of the
 #### Input dataset: labeledTrainData.tsv
 - *Dataset size for Training:* 20,000 (80% of 25,000)
 - *Dataset size for Testing:*  5,000
+
+#### Distribution of Target class
+Distribution is exactly same, i.e. 50% in each class. 
+- Data in label 1 (positive): 12,500
+- Data in label 0 (negative): 12,500
 
 
 ### Solution Statement
