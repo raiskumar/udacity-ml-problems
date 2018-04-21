@@ -21,7 +21,7 @@ Sentiment Analysis technique can be used to understand the public perception of 
 
 Machine learning can play a big role in churning out data from different social media platforms and then just providing an overall positive or negative feedback of the movies i.e. *it's thumbs up or down*. Machine learning can also help to classify a movie review in more than two categories like average, good, very good, bad etc. As a user, it will be really helpful to just know a very objective feedback or rating based on the reviews provided by other users.
 
-**For this capstone project, I plan to use IMDB dataset and perform sentiment analysis.**
+**For this capstone project, I plan to use IMDB dataset and perform sentiment analysis.** Goal is to predict whether a review is negative or positive given only the text.
 
 ### Datasets and Inputs
 
@@ -57,7 +57,8 @@ As part of this project, I plan to learn Recurrent Neural Network (RNN) and appl
 
 ### Benchmark Model
 
-I plan to compare the performance of RNN (or LSTM: Long Short-Term Memory) with that of traditional approaches like Naive Bayes. I will apply Naive Bayes by preprocessing the text using TF-IDF and then running the multinomial Naive Bayes on the preprocessed outputs. This allows the algorithm to be run on the most prominent words within a document. 
+I plan to compare the performance of RNN (or LSTM: Long Short-Term Memory) with that of traditional approaches like Naive Bayes. I will apply Naive Bayes by preprocessing the text using TF-IDF and then running the multinomial Naive Bayes on the preprocessed outputs. This allows the algorithm to be run on the most prominent words within a document.
+Ref: https://pdfs.semanticscholar.org/a030/b72c0546a3c832627855d42bccc3f6819e75.pdf
 
 I will compare the accuracy or mean-squared error of each technique to analyze which one is more effective and try to find out the reason for the same. Also, this is a Kaggle problem and the leaderboard shows good success rate. So, planning to achieve the accuracy of at least **90%** on the test data. 
 
