@@ -12,7 +12,7 @@ A couple of years back, I participated in my company Hackathon where I worked on
 
 **Sentiment Analysis** is one of the interesting and exciting problems of Natural Language Processing. I plan to use this opportunity to explore this field and do something tangible. One common use of sentiment analysis is to figure out if a text, sentence or paragraph expresses negative or positive emotional feeling. 
 
-Sentiment Analysis technique can be used to understand the public perception of a brand or product based on online content and then decide appropriate business or marketting strategies. Political parties in Democracies are deciding their campaign strategies based on people's openion on social platforms (https://ieeexplore.ieee.org/document/7823280/).
+Sentiment Analysis technique can be used to understand the public perception of a brand or product based on online content and then decide appropriate business or marketing strategies. Political parties in Democracies are deciding their campaign strategies based on people's openions on social platforms (https://ieeexplore.ieee.org/document/7823280/).
 
 
 ### Problem Statement
@@ -21,7 +21,7 @@ Sentiment Analysis technique can be used to understand the public perception of 
 
 Machine learning can play a big role in churning out data from different social media platforms and then just providing an overall positive or negative feedback of the movies i.e. *it's thumbs up or down*. Machine learning can also help to classify a movie review in more than two categories like average, good, very good, bad etc. As a user, it will be really helpful to just know a very objective feedback or rating based on the reviews provided by other users.
 
-**For this capstone project, I plan to use IMDB dataset and perform sentiment analysis.** Goal is to predict whether a review is negative or positive given only the text.
+**For this capstone project, I plan to use IMDB dataset and perform sentiment analysis.** The goal is to predict whether a review is negative or positive given only the text.
 
 ### Datasets and Inputs
 
@@ -50,7 +50,7 @@ Distribution is exactly same, i.e. 50% in each class.
 
 ### Solution Statement
 
-I plan to use **Deep Learning** techniques as the final solution. *Number of words in the reviews are not fixed and also the meaning doesn't depend directly on words but also on the context*. The same word can have different meaning depending on the surrounding words. **Recurrent neural networks are feedforward neural networks augmented by the inclusion of edges that span adjacent time steps, introducing a notion of time to the model. It deals with time series data of variable length and has had good success off late in the area of natural languages.** 
+I plan to use **Deep Learning** techniques as the final solution. *The number of words in the reviews are not fixed and also the meaning doesn't depend directly on words but also on the context*. The same word can have different meaning depending on the surrounding words. **Recurrent neural networks are feedforward neural networks augmented by the inclusion of edges that span adjacent time steps, introducing a notion of time to the model. It deals with time series data of variable length and has had good success off late in the area of natural languages.** 
 
 As part of this project, I plan to learn Recurrent Neural Network (RNN) and apply the learnings to this problem. But, at the same time, I would also like to explore how traditional machine learning techniques (non-deep learning) perform on this problem. 
 
@@ -64,7 +64,7 @@ I plan to use roc_curve to calculate accuracy for Naive-Bayes and softmax classi
 
 ### Evaluation Metrics
 
-As discussed above I will apply traditional technique as well as Deep learning technique to evaluate this problem. And the final recomended approach should achieve at least 90% accuracy. 
+As discussed above I will apply traditional technique as well as Deep learning technique to evaluate this problem. And the final recommended approach should achieve at least 90% accuracy. 
 
 
 ### Project Design
@@ -73,13 +73,13 @@ Below are major components or stages of the modeling/training.
 
 - **Preprocessing:** Before applying the data to modeling, I will ensure that it's preprocessed and in the right form. 
   - Load the data in python and explore it to ensure that, data is randomized with the similar number of positive and negative sentiments. 
-  - Remove special characters like punctuations and stop words from the text. These characters/words are noise and they don't convey any meaningful input for sentiment analysis. They also increase the text size which will further slow down the modelling process.
+  - Remove special characters like punctuations and stop words from the text. These characters/words are noise and they don't convey any meaningful input for sentiment analysis. They also increase the text size which will further slow down the modeling process.
  
 - **Create Vocab:** This will help to know how many unique words are there in the whole dataset and based on that plan to take appropriate decision to optimize the model performance. 
 
-- **Word Embedding:** Machine learning mostly work on the vector (of integers or floats), so I need to transform the text into their number representation. One of the technique is to use **one-hot encoding** on the vocab. However, this encoding is inefficient, requiring as many bits as the vocabulary. Further, it offers no direct way to capture similarity aspect between words in the encoding itself (like it fails to understand that love and adore are similar words). I also plan to explore if pre-trained word vectors (like Word2vec, GloVe etc) can be used to quicken the modelling.  
+- **Word Embedding:** Machine learning mostly work on the vector (of integers or floats), so I need to transform the text into their number representation. One of the technique is to use **one-hot encoding** on the vocab. However, this encoding is inefficient, requiring as many bits as the vocabulary. Further, it offers no direct way to capture similarity aspect between words in the encoding itself (like it fails to understand that love and adore are similar words). I also plan to explore if pre-trained word vectors (like Word2vec, GloVe etc) can be used to quicken the modeling.  
 
-- **Modelling/Training:** I plan to model the problem using the traditional technique like **Naive Bayes** as well as Deep learning techniques **RNN/LSTM**. Below is a high level diagram on how it performs sentimet analysis on text.
+- **Modeling/Training:** I plan to model the problem using the traditional technique like **Naive Bayes** as well as Deep learning techniques **RNN/LSTM**. Below is a high-level diagram of how it performs sentiment analysis of text.
 
 ![https://d3ansictanv2wj](https://d3ansictanv2wj.cloudfront.net/SentimentAnalysis16-38b6f3cbb7bae622fe0ba114db188666.png)
 
