@@ -59,12 +59,12 @@ As part of this project, I plan to learn Recurrent Neural Network (RNN) and appl
 
 I plan to compare the performance of RNN (or LSTM: Long Short-Term Memory) with that of traditional approaches like Naive Bayes. I will apply Naive Bayes by preprocessing the text using TF-IDF and then running the multinomial Naive Bayes on the preprocessed outputs. This allows the algorithm to be run on the most prominent words within a document(https://pdfs.semanticscholar.org/a030/b72c0546a3c832627855d42bccc3f6819e75.pdf).
 
-I will compare the accuracy or mean-squared error of each technique to analyze which one is more effective and try to find out the reason for the same. Also, this is a Kaggle problem and the leaderboard shows good success rate. So, planning to achieve the accuracy of at least **90%** on the test data. 
+I plan to use roc_curve to calculate accuracy for Naive-Bayes and softmax classifier for RNN model. Also, this is a Kaggle problem and the leaderboard shows good success rate. So, planning to achieve the accuracy of at least **90%** on the test data. 
 
 
 ### Evaluation Metrics
 
-I plan to use Mean Squared Error as the technique to evaluate the model. Learning is achieved by iteratively updating each of the weights to minimize loss function, which penalizes the distance between the output and the target.
+As discussed above I will apply traditional technique as well as Deep learning technique to evaluate this problem. And the final recomended approach should achieve at least 90% accuracy. 
 
 
 ### Project Design
