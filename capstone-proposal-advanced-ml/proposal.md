@@ -43,11 +43,9 @@ I am planning to use 20% of data for testing and will report the accuracy of the
 - *Dataset size for Testing:*  5,000
 
 #### Distribution of Target class
-Distribution is Dataset is balanced.
-- *Data in label 1 (positive):* 12,500
-- *Data in label 0 (negative):* 12,500
-
-Above dataset will get randomly distributed into training and testing dataset. So distribution is still going to be (almost) balanced. 
+Distribution is Dataset is balanced (i.e. both positive and negative are 50% each).
+Dataset will get *randomly* distributed into training and testing dataset. 
+So, distribution is still going to be (almost) balanced for training and testing datasets. 
 
 
 ### Solution Statement
