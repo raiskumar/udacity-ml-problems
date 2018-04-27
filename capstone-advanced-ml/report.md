@@ -1,4 +1,6 @@
 ## Naive Bayes Classifier
+One particular feature of Naive Bayes is that it’s a good algorithm for working with text classification. When dealing with text, it’s very common to treat each unique word as a feature, and since the typical review vocabulary is many thousands of words, this makes for a large number of features. The relative simplicity of the algorithm and the independent features assumption of Naive Bayes make it a strong performer for classifying texts.
+
 The Naive Bayes classifier uses the Bayes Theorem to select the outcome with the highest probability. This classifier assumes 
 the features(in this case the words) are independent and hence the word naive.
 
