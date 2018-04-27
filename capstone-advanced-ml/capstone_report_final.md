@@ -27,6 +27,13 @@ In this section, look to provide a high-level overview of the project in laymanâ
 - _Has enough background information been given so that an uninformed reader would understand the problem domain and following problem statement?_
 
 ### Problem Statement
+In this project, I have performed sentiment analysis using machine learning techniques on IMDB dataset. This dataset is from an old Kaggle competition, **Bag of Words Meets Bags of Popcorn (https://www.kaggle.com/c/word2vec-nlp-tutorial)**.
+
+The goal is to predict whether a movie review is negative or positive given only the text.
+
+For this problem, I am planning to apply Naive Bayes first to create a benchmark. Naive Bayes works quite well in text classifcation problems. And, then plan to use the accuracy obtained in the Naive Bayes as a baseline and improve it further using Deep Learning Technique. Recurrent Neural Networks are often used to deal with texts; so I will be using RNN technique as a final recommened approach. 
+
+--
 In this section, you will want to clearly define the problem that you are trying to solve, including the strategy (outline of tasks) you will use to achieve the desired solution. You should also thoroughly discuss what the intended solution will be for this problem. Questions to ask yourself when writing this section:
 - _Is the problem statement clearly defined? Will the reader understand what you are expecting to solve?_
 - _Have you thoroughly discussed how you will attempt to solve the problem?_
