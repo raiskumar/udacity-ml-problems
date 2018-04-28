@@ -49,6 +49,19 @@ In this section, you will need to clearly define the metrics or calculations you
 _(approx. 2-4 pages)_
 
 ### Data Exploration
+This dataset contains 25,000 labeled training reviews, 50,000 unlabeled training reviews, and 25,000 testing reviews. Unlabeled training data and testing data doesn't have a sentiment field; only labeled training data has sentiment field. So, to solve the problem, i have used only labelled training data so that the implementation can get trained as well as tested. 
+
+The file (labeledTrainData.tsv) is tab-delimited and has a header row followed by 25,000 rows and contains three columns/fields:
+
+['id' 'sentiment' 'review']
+*id*: Unique identifier for each entry in the dataset; we don't need this field for modeling.
+*sentiment*: Contains binary values (1 and 0). 1 for positive and 0 for negative. This is the label of the model.
+*review*: a Detailed review of movies. This is the text or feature on which machine learning models will get trained.
+
+I have used 20% of data for testing and will report the accuracy of the model on this randomly selected dataset.
+Distribution is Dataset is balanced (i.e. both positive and negative are 50% each).
+
+---
 In this section, you will be expected to analyze the data you are using for the problem. This data can either be in the form of a dataset (or datasets), input data (or input files), or even an environment. The type of data should be thoroughly described and, if possible, have basic statistics and information presented (such as discussion of input features or defining characteristics about the input or environment). Any abnormalities or interesting qualities about the data that may need to be addressed have been identified (such as features that need to be transformed or the possibility of outliers). Questions to ask yourself when writing this section:
 - _If a dataset is present for this problem, have you thoroughly discussed certain features about the dataset? Has a data sample been provided to the reader?_
 - _If a dataset is present for this problem, are statistics about the dataset calculated and reported? Have any relevant results from this calculation been discussed?_
@@ -77,6 +90,19 @@ In this section, you will need to provide a clearly defined benchmark result or 
 _(approx. 3-5 pages)_
 
 ### Data Preprocessing
+Text contain lot of noise or un-important content. In current problem as well, not all features will be equally important. I have used below techniques to preprocess the dataset. 
+
+#### Remove special chars
+Punctuation, numbers and special characters are not going to add any value in sentiment analysis, so will remove all such characters. Also, the data is generated from an online platform so it might have some HTML tags as well; will get rid of them as well. 
+
+#### Remove stop words
+Words like and, the, it etc known as *Stop Words* also don't carry any meaningful information so; will remove all stop words from the reviews. Plan to use Python's **NLTK** library to get list of English Stop words. 
+
+#### Stemmerize 
+Not all unique words are different. Take example of love and loves; both are same but if treated differently it will un-necessarily increase the vocab. 
+
+---
+Also convert all chars to lower case.
 In this section, all of your preprocessing steps will need to be clearly documented, if any were necessary. From the previous section, any of the abnormalities or characteristics that you identified about the dataset will be addressed and corrected here. Questions to ask yourself when writing this section:
 - _If the algorithms chosen require preprocessing steps like feature selection or feature transformations, have they been properly documented?_
 - _Based on the **Data Exploration** section, if there were abnormalities or characteristics that needed to be addressed, have they been properly corrected?_
