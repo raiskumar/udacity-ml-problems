@@ -128,6 +128,8 @@ Words like and, the, it etc known as *Stop Words* also don't carry any meaningfu
 #### Stemmerize 
 Not all unique words are different. Take example of love and loves; both are same but if treated differently it will un-necessarily increase the vocab. 
 
+
+
 ---
 Also convert all chars to lower case.
 In this section, all of your preprocessing steps will need to be clearly documented, if any were necessary. From the previous section, any of the abnormalities or characteristics that you identified about the dataset will be addressed and corrected here. Questions to ask yourself when writing this section:
